@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: Geneva, Verdana, sans-serif;
@@ -11,7 +11,7 @@ html {
   background: linear-gradient(315deg, rgb(46, 45, 57) 0%, rgb(13, 30, 88) 35%, rgb(2, 41, 48) 100%);
 }
 
-.logo{
+.logo {
   text-decoration: none;
   color: #fff;
   font-family: 'Kalam', cursive;
@@ -19,18 +19,18 @@ html {
   transition: 0.5s ease;
 }
 
-.logo:hover{
+.logo:hover {
   color: #40E0D0;
 }
 
-nav{
+nav {
   position: fixed;
   width: 100%;
   padding: 20px;
   transition: 0.5s ease;
 }
 
-nav .bar{
+nav .bar {
   height: 100%;
   max-width: 95%;
   margin: auto;
@@ -40,104 +40,104 @@ nav .bar{
   color: #fff;
 }
 
-.bar ul{
+.bar ul {
   display: flex;
 }
 
-.bar ul li{
+.bar ul li {
   list-style: none;
   margin: 0 8px;
 }
 
- .ul li a{
+.ul li a {
   color: #0f4f74;
   font-size: 18px;
-  font-weight: 500; 
+  font-weight: 500;
   transition: 0.5s ease;
 }
 
-nav ul li a{
+nav ul li a {
   color: #fff;
   text-decoration: none;
-  text-shadow: 0px 2px 2px rgba(11, 3, 3, 0.4); 
+  text-shadow: 0px 2px 2px rgba(11, 3, 3, 0.4);
   font-size: 15px;
 }
 
-nav.perm{
-    padding: 15px 20px;
-    background: #201E20;
-  }
-
-nav.perm ul li a{
-   color: #fff;
-   transition: 0.5s ease;
+nav.perm {
+  padding: 15px 20px;
+  background: #201E20;
 }
 
-nav ul li a:hover{
-  color: #40E0D0; 
+nav.perm ul li a {
+  color: #fff;
+  transition: 0.5s ease;
 }
 
-nav.perm ul li a:hover{
-  color: #40E0D0; 
+nav ul li a:hover {
+  color: #40E0D0;
 }
 
-nav .dropdown{
+nav.perm ul li a:hover {
+  color: #40E0D0;
+}
+
+nav .dropdown {
   display: none;
 }
 
-section{
+section {
   padding: 2em;
   margin: 0;
-} 
+}
 
-.about{
+.about {
   color: #fff;
   text-align: center;
   height: 82vh;
 }
 
-.about h1{
+.about h1 {
   letter-spacing: 4px;
 }
 
-.courses{
+.courses {
   text-align: center;
   line-height: 30px;
   text-decoration: none;
   height: 82vh;
 }
 
-.courses h1{
+.courses h1 {
   letter-spacing: 4px;
 }
 
-.courses h4{
+.courses h4 {
   color: #fff;
 }
 
-.courses a{
+.courses a {
   color: #fff;
   font-size: 18px;
 }
 
-.courses a:hover{
+.courses a:hover {
   color: #40E0D0;
 }
 
-.contact{
+.contact {
   text-align: center;
   color: #fff;
   height: 50vh;
 }
 
-.contact-icons{
+.contact-icons {
   font-size: 50px;
   color: #fff;
   transition: color 0.2s;
   margin: 20px;
 }
 
-.contact-icons:hover{
+.contact-icons:hover {
   color: #40E0D0;
 }
 
@@ -145,39 +145,39 @@ section{
   letter-spacing: 4px;
 }
 
-.projects{
+.projects {
   padding: 70px;
   color: #fff;
   height: 82vh;
 }
 
-.projects h1{
+.projects h1 {
   letter-spacing: 4px;
   text-align: center;
 }
 
-.projects h6{
+.projects h6 {
   font-size: 20px;
   text-align: center;
 }
 
-.main{
+.main {
   margin-left: 10%;
   margin-top: 15%;
   height: 80vh;
 }
 
-.main h1{
+.main h1 {
   font-size: 50px;
-  color:#DCDCDC;
+  color: #DCDCDC;
 }
 
-.main h2{
+.main h2 {
   font-size: 50px;
   color: #B0C4DE;
 }
 
-.resume{
+.resume {
   font-size: 17px;
   font-weight: bold;
   padding: 20px;
@@ -201,19 +201,27 @@ section{
   color: black;
 }
 
-h1{
-  color: #40E0D0; 
+h1 {
+  color: #40E0D0;
 }
 
-.project-types{
+/* .project-types{
   display: grid;
   justify-content: center;
   grid-template-columns: 400px 400px 400px;
   grid-gap: 40px;
   margin-top: 50px;
+} */
+
+.project-types {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  margin-top: 30px;
 }
 
-.project-types div{
+.project-types div {
   background: #201E20;
   padding: 20px;
   font-size: 13px;
@@ -224,30 +232,30 @@ h1{
   border-top: none;
 }
 
-.project-types div h4{
-   font-size: 18px;
-   font-weight: 200;
-   margin-bottom: 15px;
-   color: #40E0D0;
-} 
+.project-types div h4 {
+  font-size: 18px;
+  font-weight: 200;
+  margin-bottom: 15px;
+  color: #40E0D0;
+}
 
-.project-types div a{
+.project-types div a {
   text-decoration: none;
   color: #fff;
   font-size: 12px;
   margin-top: 20px;
   display: inline-block;
-} 
+}
 
-.project-types div a:hover{
+.project-types div a:hover {
   color: #40E0D0;
 }
 
-.project-types p{
+.project-types p {
   font-size: 15px;
 }
 
-.modal{
+.modal {
   padding: 1em;
   /* max-width: 100ch; */
   overflow: hidden;
@@ -257,49 +265,52 @@ h1{
   width: 1000px;
   height: 600px;
   top: -400px;
-  /* animation: drop 0.5s ease forwards; */
   background: #fff;
   color: black;
   border: none;
   overflow: scroll;
 }
 
-.modal h2{
+.modal h2 {
   padding-top: 10px;
   text-align: center;
 }
 
-.text{
+.text {
   padding: 0 100px;
 }
 
-.modal[open]{
+.modal[open] {
   animation: drop 0.5s ease forwards;
 }
 
 @keyframes drop {
-   0%{}
+  0% {}
 
-   100%{
+  100% {
     transform: translateY(220px);
-   }
+  }
 }
 
-.close-x{
+#dropdown{
+  color: #201E20;
+}
+
+.close-x {
   font-size: 35px;
   position: absolute;
   top: 5px;
   right: 8px;
-  color:#696969;
+  color: #696969;
   transition: color 0.2s;
   border: none;
 }
 
-.close-x:hover{
+.close-x:hover {
   color: #201E20;
 }
 
-.img{
+.img {
   height: 366px;
   width: 550px;
   display: block;
@@ -307,16 +318,73 @@ h1{
   margin-right: auto;
 }
 
-@media only screen and (max-width: 576px) {
-  nav {
-    padding: 5px;
-  }
-  
-  nav .bar {
-    max-width: 85%;
+@media screen and (max-width: 844px) {
+
+  nav .dropdown {
+    display: block;
+    font-size: 25px;
+    margin-right: 10%;
   }
 
-  .logo {
-    font-size: 14px;
+  .close-outline{
+    color: #696969;
+    transition: color 0.2s;
   }
+
+  nav ul {
+    background: #40E0D0;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    padding: 15px 0;
+    text-align: center;
+    margin: 25px;
+  }
+
+  nav ul .dropdown {
+    position: absolute;
+    top: 25px;
+    left: 5px;
+    cursor: pointer;
+  }
+
+  nav ul li a{
+    color: #201E20;
+    text-shadow: none;
+  }
+
+  .project-types {
+    grid-gap: 40px;
+    margin-top: 50px;
+  }
+
+  .resume {
+    width: 100px;
+    padding: 15px;
+    font-size: 13px;
+  }
+
+  .main {
+    margin-top: 35%;
+    margin-left: 0%;
+  }
+
+  .main h1 {
+    font-size: 30px;
+  }
+
+  .main h2 {
+    font-size: 30px;
+  }
+
 }
