@@ -307,54 +307,16 @@ h1{
   margin-right: auto;
 }
 
-
-@media only screen and (max-width: 600px) {
-  .main h1{
-    font-size: 30px;
+@media only screen and (max-width: 576px) {
+  nav {
+    padding: 5px;
+  }
+  
+  nav .bar {
+    max-width: 85%;
   }
 
-  .main h2{
-    font-size: 30px;
-  }
-
-  .main{
-    margin-top: 100px;
-  }
-
-  nav .dropdown{
-    display: block;
-    font-size: 25px;
-  }
-
-  .resume{
-    width: 73px;
-    font-size: 13px;
-    background-color:#40E0D0;
-    color: black;
-    border: 2px solid black;
-    padding: 15px;
-  }
-
-  nav ul {
-    background: black ;
-    position: fixed;
-    top: 0;
-    right: -200px;
-    width: 200px;
-    height: 100vh;
-    padding-top: 50px;
-    z-index: 2;
-  }
-
-  nav ul li {
-    display: block;
-    margin: 25px;
-  }
-
-  nav ul .dropdown {
-    position: absolute;
-    top: 25px;
-    left: 25px;
-    cursor: pointer;
+  .logo {
+    font-size: 14px;
   }
 }
