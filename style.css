@@ -318,7 +318,7 @@ h1 {
   margin-right: auto;
 }
 
-@media screen and (max-width: 844px) {
+@media screen and (max-width: 900px) {
 
   nav .dropdown {
     display: block;
