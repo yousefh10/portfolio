@@ -2,22 +2,26 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image" href="contents/images/logo.png">
     <title>Yousef Hammad</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
     <nav>
         <div class="bar">
-            <a class="logo" href="#">YH</a>
+            <a href="#">
+                <img class="logo-img" src="contents/images/logo.png" alt="Yousef">
+            </a>
             <ul id="dropmenu">
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#courses">COURSES</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#contact">CONTACT</a></li>
-                <ion-icon class="dropdown" id="dropdown" name="close-outline" onclick="closedropdown()" ></ion-icon>
+                <ion-icon class="dropdown" id="dropdown" name="close-outline" onclick="closedropdown()"></ion-icon>
             </ul>
-                <ion-icon class="dropdown" name="menu-outline" onclick="opendropdown()"></ion-icon>
+            <ion-icon class="dropdown" name="menu-outline" onclick="opendropdown()"></ion-icon>
 
         </div>
     </nav>
@@ -25,106 +29,367 @@
     <section id="start">
         <div class="main">
             <h1>Yousef Hammad</h1>
-            <h2>3rd Year Software Engineer at UCalgary.</h2>
-            <a href="contents/YousefHammad-Resume.pdf" target="_blank" class="resume">MY RESUME</a>
+            <h2>Software Engineering Student at UCalgary.</h2>
+            <br>
+            <a href="#projects" class="main-buttons">My Projects</a>
+            <a href="#contact" class="main-buttons">Contact Me</a>
+            <div class="arrow-down">
+                <a class="jump" href="#about"><ion-icon name="chevron-down"></ion-icon></a>
+                <a class=""></a>
+            </div>
         </div>
     </section>
 
     <section id="about">
         <div class="about">
-            <h1>ABOUT</h1>
+            <h1>About Me</h1>
             <br>
-            <h4>
-                I am a software engineering student studying at the University of Calgary.
-            </h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Urna nec tincidunt praesent semper feugiat nibh sed. Integer eget aliquet nibh praesent.
+                Tincidunt
+                vitae semper quis lectus. A iaculis at erat pellentesque adipiscing. Iaculis at erat pellentesque
+                adipiscing commodo
+                elit.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua. Urna nec tincidunt praesent semper feugiat nibh sed. Integer eget aliquet nibh praesent.
+                Tincidunt
+                vitae semper quis lectus. A iaculis at erat pellentesque adipiscing. Iaculis at erat pellentesque
+                adipiscing commodo
+                elit.</p>
+            <br>
+            <a href="contents/YousefHammad-Resume.pdf" target="_blank" class="resume">My Resume</a>
         </div>
     </section>
 
     <section id="courses">
         <div class="courses">
-            <h1>COURSES</h1>
-            <!-- <h4>Below is a list of courses I have completed/currently taking throughout my degree so far.</h4> -->
+            <h1>Courses</h1>
             <br>
-            <a href="https://contacts.ucalgary.ca/info/cpsc/courses/w23/SENG401" target="_blank" class="course">SENG 401
-                - Software Architecture</a>
-            <br>
-            <a href="https://contacts.ucalgary.ca/info/cpsc/courses/w23/SENG438" target="_blank" class="course">SENG 438
-                - Software Testing, Reliability, and Quality</a>
-            <br>
-            <a href="https://contacts.ucalgary.ca/info/cpsc/courses/w23/SENG471" target="_blank" class="course">SENG 471
-                - Software Requirements Engineering</a>
-            <br>
-            <a href="https://contacts.ucalgary.ca/info/cpsc/courses/w23/CPSC441" target="_blank" class="course">CPSC 441
-                - Computer Networks</a>
-            <br>
-            <a href="https://contacts.ucalgary.ca/info/enel/courses/f22/ENSF480" target="_blank" class="course">ENSF 480
-                - Principles of Software Design</a>
-            <br>
-            <a href="https://contacts.ucalgary.ca/info/cpsc/courses/f22/CPSC471" target="_blank" class="course">CPSC 471
-                - Database Management Systems</a>
-            <br>
-            <a href="https://contacts.ucalgary.ca/info/enel/courses/f22/ENCM511" target="_blank" class="course">ENCM 511
-                - Embedded System Interfacing</a>
-            <br>
-            <a href="https://contacts.ucalgary.ca/info/cpsc/courses/f22/CPSC457" target="_blank" class="course">CPSC 457
-                - Principles of Operating Systems</a>
-            <br>
-            <a href="https://contacts.ucalgary.ca/info/cpsc/courses/w22/CPSC319" target="_blank" class="course">CPSC 319
-                - Data Structures and Algorithms</a>
-            <br>
-            <a href="https://contacts.ucalgary.ca/info/enel/courses/w22/ENSF409" target="_blank" class="course">ENSF 409
-                - Principles of Software Development</a>
-            <br>
+            <button class="accordion">First Year (2020-2021)<ion-icon class="down-icon" name="chevron-down-outline"></ion-icon></button>
+            <div class="panel">
+                <br>
+                <h3>Fall 2020</h3>
+                <div class="course-types">
+                    <div class="course-class">
+                        <h4>ENGG 200</h4>
+                        <p>Engineering Design and Communication</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/enel/courses/f20/ENGG200"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                    <div class="course-class">
+                        <h4>ENGG 233</h4>
+                        <p>Computing For Engineers</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/enel/courses/f20/ENGG233"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                    <div class="course-class">
+                        <h4>MATH 275</h4>
+                        <p>Calculus for Engineers and Scientists</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/math/courses/f20/MATH275"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                    <div class="course-class">
+                        <h4>MATH 211</h4>
+                        <p>Linear Methods I</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/math/courses/f20/MATH211"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                    <div class="course-class">
+                        <h4>ENGG 201</h4>
+                        <p>Behaviour Of Liquids Gases & Solids</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/enel/courses/f20/ENGG201"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                </div>
+                <br><br>
+                <h3>Winter 2021</h3>
+                <div class="course-types">
+                    <div class="course-class">
+                        <h4>ENGG 225</h4>
+                        <p>Fundamentals of Electrical Circuits and Machines</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/enel/courses/w21/ENGG225"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                    <div class="course-class">
+                        <h4>ENGG 202</h4>
+                        <p>Engineering Statics</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/enel/courses/w21/ENGG202"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                    <div class="course-class">
+                        <h4>MATH 277</h4>
+                        <p>Multivariable Calculus for Engineers and Scientists</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/math/courses/w21/MATH277"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                    <div class="course-class">
+                        <h4>PHYS 259</h4>
+                        <p>Electricity and Magnetism</p>
+                        <a class="learn-more-courses"
+                            href="https://contacts.ucalgary.ca/info/phas/courses/w21/PHYS259?destination=courses%2Fw21"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                    <div class="course-class">
+                        <h4>CHEM 209</h4>
+                        <p>General Chemistry For Engineers</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/chem/courses/w21/CHEM209"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                </div>
+                <br><br>
+                <h3>Spring 2021</h3>
+                <div class="two-courses">
+                    <div class="course-class">
+                        <h4>MATH 375</h4>
+                        <p>Differential Equations for Engineers and Scientists</p>
+                        <a href="https://contacts.ucalgary.ca/info/math/courses/p21/MATH375" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                    <div class="course-class">
+                        <h4>GRST 211</h4>
+                        <p>Technical Terms of Medicine and the Life Sciences</p>
+                        <a href="https://clare.ucalgary.ca/manageprofile/courses/p21/GRST211?destination=courses%2Fp21"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                </div>
+                <br><br>
+                <h3>Summer 2021</h3>
+                <div class="one-course">
+                    <div class="course-class">
+                        <h4>MATH 271</h4>
+                        <p>Discrete Mathematics</p>
+                        <a href="https://contacts.ucalgary.ca/info/math/courses/s21/MATH271" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <br><br>
+            <button class="accordion">Second Year (2021-2022)<ion-icon class="down-icon" name="chevron-down-outline"></ion-icon></button>
+            <div class="panel">
+                <br>
+                <h3>Fall 2021</h3>
+                <div class="course-types-four">
+                    <div class="course-class">
+                        <h4>ENGG 319</h4>
+                        <p>Probability and Statistics for Engineers</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/enel/courses/f20/ENGG319"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                    <div class="course-class">
+                        <h4>ENSF 337</h4>
+                        <p>Programming Fundamentals for Software and Computer</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/enel/courses/f21/ENSF337"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                    <div class="course-class">
+                        <h4>PHYS 365</h4>
+                        <p>Acoustics, Optics and Modern Physics</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/phas/courses/f21/PHYS365"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                    <div class="course-class">
+                        <h4>ENEL 353</h4>
+                        <p>Digital Circuits</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/enel/courses/f21/ENEL353"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                </div>
+                <br><br>
+                <h3>Winter 2022</h3>
+                <div class="course-types-four">
+                    <div class="course-class">
+                        <h4>CPSC 319</h4>
+                        <p>Data Structures, Algorithms, and Their Applications</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/cpsc/courses/w22/CPSC319"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                    <div class="course-class">
+                        <h4>ENSF 409</h4>
+                        <p>Principles of Software Development</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/enel/courses/w22/ENSF409"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                    <div class="course-class">
+                        <h4>ENEL 327</h4>
+                        <p>Signals and Transforms</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/enel/courses/w22/ENEL327"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+    
+                    <div class="course-class">
+                        <h4>ENCM 369</h4>
+                        <p>Computer Organization</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/enel/courses/w22/ENCM369"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                </div>
+                <br><br>
+                <h3>Spring 2022</h3>
+                <div class="one-course">
+                    <div class="course-class">
+                        <h4>ECON 209</h4>
+                        <p>Engineering Economics</p>
+                        <a href="https://econ.ucalgary.ca/manageprofile/courses/p22/ECON209" target="_blank"><i
+                                class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <br><br>
+            <button class="accordion">Third Year (2022-2023)<ion-icon class="down-icon" name="chevron-down-outline"></ion-icon></button>
+            <div class="panel">
+                <br>
+                <h3>Fall 2022</h3>
+                <div class="course-types-four">
+                    <div class="course-class">
+                        <h4>ENSF 480</h4>
+                        <p>Principles of Software Design</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/enel/courses/f22/ENSF480"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                    <div class="course-class">
+                        <h4>ENCM 511</h4>
+                        <p>Embedded System Interfacing</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/enel/courses/f22/ENCM511"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                    <div class="course-class">
+                        <h4>CPSC 471</h4>
+                        <p>Data Base Management Systems</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/cpsc/courses/f22/CPSC471"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                    <div class="course-class">
+                        <h4>CPSC 457</h4>
+                        <p>Principles of Operating Systems</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/cpsc/courses/f22/CPSC457"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                </div>
+                <br><br>
+                <h3>Winter 2023</h3>
+                <div class="course-types-four">
+                    <div class="course-class">
+                        <h4>SENG 471</h4>
+                        <p>Software Requirements Engineering</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/cpsc/courses/w23/SENG471"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                    <div class="course-class">
+                        <h4>SENG 438</h4>
+                        <p>Software Testing, Reliability, and Quality</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/cpsc/courses/w23/SENG438"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                    <div class="course-class">
+                        <h4>SENG 401</h4>
+                        <p>Software Architecture</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/cpsc/courses/w23/SENG401"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+    
+                    <div class="course-class">
+                        <h4>CPSC 441</h4>
+                        <p>Computer Networks</p>
+                        <a class="learn-more-courses" href="https://contacts.ucalgary.ca/info/cpsc/courses/w23/CPSC441"
+                            target="_blank"><i class="fa-solid fa-up-right-from-square"></i> Learn More</a>
+                    </div>
+                </div>
+        </div>
         </div>
     </section>
 
     <section id="projects">
-        <div class="projects">
-            <div class="t">
-                <h1>PROJECTS</h1>
-                <div class="project-types">
-                    <div class="movie">
-                        <h4>Movie Theater Ticket Reservation Application</h4>
-                        <p>Java application that emulates the process to obtain movie tickets. Users can select movies,
-                            view available seats graphically, make payments and receive a confirmation of bookings by
-                            email.</p>
-                        <br>
+        <h1>Projects</h1>
+        <div class="project-types">
+            <div class="types">
+                <img src="contents/images/invert.png">
+                <div class="overlay-effect">
+                    <h2>Mazumas' Theatre</h2>
+                    <br>
+                    <p>Java application that emulates the process to obtain movie tickets. Users can select movies,
+                        view available seats graphically, make payments and receive a confirmation of bookings by
+                        email.</p>
+                    <br>
+                    <div class="btn">
                         <a href="##" class="open-modal">Learn More</a>
+                        <a href="https://github.com/yousefh10/Movie-Theatre-Ticket-Reservation-Application" class="external-link" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
                     </div>
-                    <div>
-                        <h4>Hear It Here</h4>
-                        <!-- <br> -->
-                        <p>Coming Soon</p>
-                        <!-- <br> -->
-                        <!-- <a href="##" class="open-modal">Learn More</a> -->
-                    </div>
-                    <div>
-                        <h4>Food Bank Inventory System</h4>
-                        <p>Java management system that produces customized food hampers based on the user's needs and
-                            implemented a MySQL database to update inventory.</p>
-                        <br><br>
-                        <a href="##" class="open-modal">Learn More</a>
-                    </div>
+                    
                 </div>
             </div>
-        </div>
+
+            <div class="types">
+                <img src="contents/images/placeholder.jpeg">
+                <div class="overlay-effect">
+                    <h2>Hear It Here</h2>
+                    <br>
+                    <p>Coming Soon 🤔</p>
+                    <br>
+                    <div class="btn">
+                        <a href="##" class="open-modal">Learn More</a>
+                        <a href="#" class="external-link" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="types">
+                <img src="contents/images/placeholder.jpeg">
+                <div class="overlay-effect">
+                    <h2>Book My Ride</h2>
+                    <br>
+                    <p>Coming Soon 🤔</p>
+                    <br>
+                    <div class="btn">
+                        <a href="##" class="open-modal">Learn More</a>
+                        <a href="#" class="external-link" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
     </section>
 
     <section id="contact">
         <div class="contact">
-            <h1>CONTACT ME</h1>
-            <br>
-            <h4>I'd love to hear from you! Feel free to contact me through any of the methods below.</h4>
-            <br>
-            <a href="mailto: yousefhammad10@gmail.com" target="_blank" class="contact-icons">
-                <ion-icon name="mail"></ion-icon>
-            </a>
-            <a href="https://linkedin.com/in/yousefhammad" target="_blank" class="contact-icons">
-                <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-            <a href="https://github.com/yousefh10" target="_blank" class="contact-icons">
-                <ion-icon name="logo-github"></ion-icon>
-            </a>
+            <div class="contact-text">
+                <h1 class="contact-title">Get In Touch</h1>
+                <br>
+                <p>I'd love to hear from you! Please feel free to drop me a message if you have any questions or comments.</p>
+                <div class="contact-logos">
+                    <a href="mailto: yousefhammad10@gmail.com" target="_blank" class="contact-icons">
+                        <ion-icon name="mail"></ion-icon>
+                    </a>
+                    <a href="https://linkedin.com/in/yousefhammad" target="_blank" class="contact-icons">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                    <a href="https://github.com/yousefh10" target="_blank" class="contact-icons">
+                        <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form action="https://formspree.io/f/xeqwzkja" method="POST">
+                    <input type="text" name="name" required placeholder="Name">
+                    <br>
+                    <input type="text" name="email" required placeholder="Email Address">
+                    <br>
+                    <textarea id="message" name="message" rows="8" required placeholder="Message"></textarea>
+                    <br>
+                    <input type="submit" onclick="resetForm()" class="submit-contact-form" value="Submit">
+                    <br><br>
+                </form>
+            </div>
         </div>
     </section>
 
@@ -135,34 +400,20 @@
         </a>
         <br>
         <img class="img" src="contents/images/movieTheatre.png" alt="Mazuma's Theater">
-        <!-- <img class="img" src="contents/images/movieList.png" alt="Movie Selection Page"> -->
         <br>
         <div class="text">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Urna nec tincidunt praesent semper feugiat nibh sed. Integer eget aliquet nibh praesent.
-                Tincidunt
-                vitae semper quis lectus. A iaculis at erat pellentesque adipiscing. Iaculis at erat pellentesque
-                adipiscing commodo
-                elit. Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean. Malesuada nunc vel risus
-                commodo
-                viverra maecenas accumsan. At tempor commodo ullamcorper a lacus. Pretium vulputate sapien nec sagittis
-                aliquam.</p>
+            <p>Developed a ticket reservation system where registered and guest users can reserve tickets for movies. Users can
+                search and select movies, pick a showtime, view available seats graphically, make payments and receive a
+                confirmation of bookings by email. Unsatisfied with your booking, a user can also cancel their booking and receive a
+                refund. Administrators can add/delete movies and users from the database.</p>
             <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Urna nec tincidunt praesent semper feugiat nibh sed. Integer eget aliquet nibh praesent.
-                Tincidunt
-                vitae semper quis lectus. A iaculis at erat pellentesque adipiscing. Iaculis at erat pellentesque
-                adipiscing commodo
-                elit. Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean. Malesuada nunc vel risus
-                commodo
-                viverra maecenas accumsan. At tempor commodo ullamcorper a lacus. Pretium vulputate sapien nec sagittis
-                aliquam.</p>
+            <p>Implemented the application in Java while incorporating JavaMail utilities. Utilized mySQL to store movies,
+                showtimes, registered users information and bookings made by users.</p>
         </div>
         <br>
         <div class="btn-modal">
             <a href="##" class="close-modal close-btn">Close</a>
+            <a href="https://github.com/yousefh10/Movie-Theatre-Ticket-Reservation-Application" class="source-code" target="_blank">Source Code</a>
         </div>
     </dialog>
 
@@ -179,6 +430,8 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/2300f4b48a.js" crossorigin="anonymous"></script>
+
 
     <script>
         const modal = document.querySelector('.modal');
@@ -231,7 +484,31 @@
                 closedropdown();
             });
         }
+    </script>
 
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+
+    <script>
+        window.onbeforeunload = () => {
+            for (const form of document.getElementsByTagName('form')) {
+                form.reset();
+            }
+        }
     </script>
 
 </body>
