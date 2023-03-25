@@ -275,7 +275,6 @@ section {
 
 .accordion:after {
   color: #fff;
-  font-weight: bold;
   float: right;
   margin-left: 5px;
 }
@@ -431,9 +430,7 @@ input:required::placeholder, textarea:required::placeholder {
 
 .submit {
   font-size: 17px;
-  font-weight: bold;
   padding: 20px;
-  font-weight: bold;
   text-align: center;
   width: 150px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -593,9 +590,7 @@ h1 {
 
 .close-btn {
   font-size: 15px;
-  font-weight: bold;
   padding: 10px;
-  font-weight: bold;
   text-align: center;
   width: 92px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -609,9 +604,7 @@ h1 {
 
 .source-code {
   font-size: 15px;
-  font-weight: bold;
   padding: 10px;
-  font-weight: bold;
   text-align: center;
   width: 92px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -626,9 +619,7 @@ h1 {
 
 .submit-contact-form {
   font-size: 17px;
-  font-weight: bold;
   padding: 10px;
-  font-weight: bold;
   text-align: center;
   width: 150px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -688,7 +679,7 @@ h1 {
   }
 
   .main-buttons, .resume {
-    font-size: 14px;
+    font-size: 13px;
     width: 80px;
   }
 
