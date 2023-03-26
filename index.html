@@ -31,7 +31,7 @@
             <h1>Yousef Hammad</h1>
             <h2>Software Engineering Student at UCalgary.</h2>
             <br>
-            <a href="#projects" class="main-buttons">My Projects</a>
+            <a href="#projects" class="main-buttons">My Work</a>
             <a href="#contact" class="main-buttons">Contact Me</a>
             <div class="arrow-down">
                 <a class="jump" href="#about"><ion-icon name="chevron-down"></ion-icon></a>
@@ -307,11 +307,28 @@
         <h1>Projects</h1>
         <div class="project-types">
             <div class="types">
+                <img src="contents/images/hear-it-here.png">
+                <div class="overlay-effect">
+                    <h2>Hear It Here</h2>
+                    <br>
+                    <p>A forum for all music related needs.</p>
+                    <br>
+                    <div class="btn">
+                        <a href="##" class="open-modal-music">Learn More</a>
+                        <a href="#" class="external-link" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="types">
                 <img src="contents/images/invert.png">
                 <div class="overlay-effect">
                     <h2>Mazumas' Theatre</h2>
                     <br>
-                    <p>Application that emulates the process to obtain movie tickets.</p>
+                    <p>A movie ticket booking system.</p>
                     <br>
                     <div class="btn">
                         <a href="##" class="open-modal">Learn More</a>
@@ -324,33 +341,16 @@
             </div>
 
             <div class="types">
-                <img src="contents/images/hear-it-here.png">
-                <div class="overlay-effect">
-                    <h2>Hear It Here</h2>
-                    <br>
-                    <p>Coming Soon 🤔</p>
-                    <br>
-                    <div class="btn">
-                        <a href="##" class="open-modal">Learn More</a>
-                        <a href="#" class="external-link" target="_blank">
-                            <ion-icon name="logo-github"></ion-icon>
-                        </a>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="types">
-                <img src="contents/images/placeholder.jpeg">
+                <img src="contents/images/car.png">
                 <div class="overlay-effect">
                     <h2>Book My Ride</h2>
                     <br>
                     <p>Coming Soon 🤔</p>
                     <br>
                     <div class="btn">
-                        <a href="##" class="open-modal">Learn More</a>
+                        <!-- <a href="##" class="open-modal">Learn More</a>
                         <a href="#" class="external-link" target="_blank">
-                            <ion-icon name="logo-github"></ion-icon>
+                            <ion-icon name="logo-github"></ion-icon> -->
                         </a>
                     </div>
                     
@@ -415,6 +415,26 @@
         </div>
     </dialog>
 
+    <dialog class="modal-music" id="modal-music">
+        <h2>Hear It Here</h2>
+        <a href="##" class="close-modal-music close-x">
+            <ion-icon name="close-outline"></ion-icon>
+        </a>
+        <br>
+        <img class="img-music" src="contents/images/hear-it-here-big.png" alt="Hear It Here">
+        <br>
+        <div class="text">
+            <p>what is it</p>
+            <br>
+            <p>what i used (html, css, django, javascript)</p>
+        </div>
+        <br>
+        <div class="btn-modal">
+            <a href="##" class="close-modal-music close-btn">Close</a>
+            <a href="https://github.com/yousefh10/Movie-Theatre-Ticket-Reservation-Application" class="source-code" target="_blank">Source Code</a>
+        </div>
+    </dialog>
+
     <script>
         let nav = document.querySelector("nav");
         window.onscroll = function () {
@@ -455,6 +475,32 @@
             });
         }
     </script>
+
+     <script>
+        const musicmodal = document.querySelector('.modal-music');
+        const openMusicModal = document.querySelector('.open-modal-music');
+        const closeMusicModal = document.querySelectorAll('.close-modal-music');
+
+        openMusicModal.addEventListener('click', () => {
+            musicmodal.showModal();
+            document.querySelector("body").style.overflow = 'hidden';
+
+            musicmodal.addEventListener('keydown', (event) => {
+                if (event.keyCode === 27) { // escape 
+                    musicmodal.close();
+                    document.querySelector("body").style.overflow = 'visible';
+                }
+            });
+        })
+
+        for (let i = 0; i < closeMusicModal.length; i++) {
+            closeMusicModal[i].addEventListener('click', () => {
+                musicmodal.close();
+                document.querySelector("body").style.overflow = 'visible';
+            });
+        }
+    </script>
+
 
     <script>
         const toggleButton = document.getElementsByClassName('dropdown')[0]
