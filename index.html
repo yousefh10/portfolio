@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 
+<!-- things to update:
+1. add back github icon on hear-it-here
+2. add back 'source code' button on hear-it-here
+3. update hear-it-here image
+4. animations
+5. skills 
+6. span on modals saying languages used -->
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image" href="contents/images/logo.png">
@@ -16,8 +24,8 @@
             </a>
             <ul id="dropmenu">
                 <li><a href="#about">ABOUT</a></li>
-                <li><a href="#courses">COURSES</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#courses">COURSES</a></li>
                 <li><a href="#contact">CONTACT</a></li>
                 <ion-icon class="dropdown" id="dropdown" name="close-outline" onclick="closedropdown()"></ion-icon>
             </ul>
@@ -31,42 +39,85 @@
             <h1>Yousef Hammad</h1>
             <h2>Software Engineering Student at UCalgary.</h2>
             <br>
-            <a href="#projects" class="main-buttons">My Work</a>
-            <a href="#contact" class="main-buttons">Contact Me</a>
-            <div class="arrow-down">
+                <a href="#about" class="main-buttons">Know More</a>
+            <!-- <div class="arrow-down">
                 <a class="jump" href="#about"><ion-icon name="chevron-down"></ion-icon></a>
                 <a class=""></a>
-            </div>
+            </div> -->
         </div>
     </section>
 
     <section id="about">
         <div class="about">
-            <h1>About Me</h1>
+            <h1 class="fade-in-titles">ABOUT ME</h1>
             <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Urna nec tincidunt praesent semper feugiat nibh sed. Integer eget aliquet nibh praesent.
-                Tincidunt
-                vitae semper quis lectus. A iaculis at erat pellentesque adipiscing. Iaculis at erat pellentesque
-                adipiscing commodo
-                elit.</p>
+            <p class="about-p"> I am a third-year software engineering student at the University of Calgary, with an interest in full stack
+                development. My passion for programming and technology has led me to pursue a career in software, and I am
+                constantly seeking opportunities to expand my knowledge and skills. In my free time, I enjoy playing
+                soccer and going to the gym. </p>
             <br>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore
-                magna aliqua. Urna nec tincidunt praesent semper feugiat nibh sed. Integer eget aliquet nibh praesent.
-                Tincidunt
-                vitae semper quis lectus. A iaculis at erat pellentesque adipiscing. Iaculis at erat pellentesque
-                adipiscing commodo
-                elit.</p>
-            <br>
-            <a href="contents/YousefHammad-Resume.pdf" target="_blank" class="resume">My Resume</a>
+            <a href="contents/YousefHammad.pdf" target="_blank" class="resume">My Resume</a>
         </div>
+    </section>
+
+    <section id="projects">
+        <h1 class="fade-in-titles">PROJECTS</h1>
+        <div class="project-types reveal">
+            <div class="types">
+                <img src="contents/images/hear-it-here.png">
+                <div class="overlay-effect">
+                    <h2>Hear It Here</h2>
+                    <br>
+                    <p>A forum for all music related needs.</p>
+                    <br>
+                    <div class="btn">
+                        <a href="##" class="open-modal-music">Learn More</a>
+                        <!-- <a href="#" class="external-link" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a> -->
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="types">
+                <img src="contents/images/invert.png">
+                <div class="overlay-effect">
+                    <h2>Mazumas' Theatre</h2>
+                    <br>
+                    <p>A movie ticket booking system.</p>
+                    <br>
+                    <div class="btn">
+                        <a href="##" class="open-modal">Learn More</a>
+                        <a href="https://github.com/yousefh10/Movie-Theatre-Ticket-Reservation-Application" class="external-link" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="types">
+                <img src="contents/images/car.png">
+                <div class="overlay-effect">
+                    <h2>Book My Ride</h2>
+                    <br>
+                    <p>Coming Soon 🤔</p>
+                    <br>
+                    <div class="btn">
+                        <!-- <a href="##" class="open-modal">Learn More</a>
+                        <a href="#" class="external-link" target="_blank">
+                            <ion-icon name="logo-github"></ion-icon> -->
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
     </section>
 
     <section id="courses">
         <div class="courses">
-            <h1>Courses</h1>
+            <h1 class="fade-in-titles">COURSES</h1>
             <br>
             <button class="accordion">First Year (2020-2021)<ion-icon class="down-icon" name="chevron-down-outline"></ion-icon></button>
             <div class="panel">
@@ -303,65 +354,10 @@
         </div>
     </section>
 
-    <section id="projects">
-        <h1>Projects</h1>
-        <div class="project-types">
-            <div class="types">
-                <img src="contents/images/hear-it-here.png">
-                <div class="overlay-effect">
-                    <h2>Hear It Here</h2>
-                    <br>
-                    <p>A forum for all music related needs.</p>
-                    <br>
-                    <div class="btn">
-                        <a href="##" class="open-modal-music">Learn More</a>
-                        <a href="#" class="external-link" target="_blank">
-                            <ion-icon name="logo-github"></ion-icon>
-                        </a>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="types">
-                <img src="contents/images/invert.png">
-                <div class="overlay-effect">
-                    <h2>Mazumas' Theatre</h2>
-                    <br>
-                    <p>A movie ticket booking system.</p>
-                    <br>
-                    <div class="btn">
-                        <a href="##" class="open-modal">Learn More</a>
-                        <a href="https://github.com/yousefh10/Movie-Theatre-Ticket-Reservation-Application" class="external-link" target="_blank">
-                            <ion-icon name="logo-github"></ion-icon>
-                        </a>
-                    </div>
-                    
-                </div>
-            </div>
-
-            <div class="types">
-                <img src="contents/images/car.png">
-                <div class="overlay-effect">
-                    <h2>Book My Ride</h2>
-                    <br>
-                    <p>Coming Soon 🤔</p>
-                    <br>
-                    <div class="btn">
-                        <!-- <a href="##" class="open-modal">Learn More</a>
-                        <a href="#" class="external-link" target="_blank">
-                            <ion-icon name="logo-github"></ion-icon> -->
-                        </a>
-                    </div>
-                    
-                </div>
-            </div>
-    </section>
-
     <section id="contact">
         <div class="contact">
             <div class="contact-text">
-                <h1 class="contact-title">Get In Touch</h1>
+                <h1 class="contact-title">GET IN TOUCH</h1>
                 <br>
                 <p>I'd love to hear from you! Please feel free to drop me a message if you have any questions or comments.</p>
                 <div class="contact-logos">
@@ -399,14 +395,12 @@
         <br>
         <img class="img" src="contents/images/movieTheatre.png" alt="Mazuma's Theater">
         <br>
-        <div class="text">
-            <p>Developed a ticket reservation system where registered and guest users can reserve tickets for movies. Users can
+        <div class="text-2">
+            <p>Developed a ticket reservation system in Java where registered and guest users can reserve tickets for movies. Users can
                 search and select movies, pick a showtime, view available seats graphically, make payments and receive a
-                confirmation of bookings by email. Unsatisfied with your booking, a user can also cancel their booking and receive a
-                refund. Administrators can add/delete movies and users from the database.</p>
+                confirmation of bookings by email. Unsatisfied, a user can also cancel their booking and receive a
+                refund.</p>
             <br>
-            <p>Implemented the application in Java while incorporating JavaMail utilities. Utilized mySQL to store movies,
-                showtimes, registered users information and bookings made by users.</p>
         </div>
         <br>
         <div class="btn-modal">
@@ -423,15 +417,18 @@
         <br>
         <img class="img-music" src="contents/images/hear-it-here-big.png" alt="Hear It Here">
         <br>
-        <div class="text">
-            <p>what is it</p>
+        <div class="text-2">
+            <p>Created a music forum site that allows users to interact and share their thoughts on various music-related topics.
+                The forum allows users to create posts and share their thoughts through comments on other users' posts.
+                Additionally, users have the freedom to personalize their profiles with ease according to their
+                preferences. Hear It Here is a fun and easy way to expand your musical horizons and connect with other fans.</p>
             <br>
-            <p>what i used (html, css, django, javascript)</p>
+            
         </div>
         <br>
         <div class="btn-modal">
             <a href="##" class="close-modal-music close-btn">Close</a>
-            <a href="https://github.com/yousefh10/Movie-Theatre-Ticket-Reservation-Application" class="source-code" target="_blank">Source Code</a>
+            <!-- <a href="https://github.com/yousefh10/Movie-Theatre-Ticket-Reservation-Application" class="source-code" target="_blank">Source Code</a> -->
         </div>
     </dialog>
 
@@ -546,7 +543,7 @@
             });
         }
     </script>
-
+    
     <script>
         window.onbeforeunload = () => {
             for (const form of document.getElementsByTagName('form')) {
@@ -554,7 +551,47 @@
             }
         }
     </script>
+    
+    <script>
+        window.addEventListener('scroll', reveal);
+
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var revealTop = reveals[i].getBoundingClientRect().top;
+                var revealPoint = 150;
+
+                if (revealTop < windowHeight - revealPoint) {
+                    reveals[i].classList.add('active');
+                }
+            }
+        }
+    </script>
+    
+    <script>
+        const options = {
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                }
+            });
+        }, options);
+
+        const h1Elements = document.querySelectorAll('h1');
+        h1Elements.forEach(h1 => {
+            observer.observe(h1);
+        });
+        observer.observe(h1);
+    </script>
 
 </body>
 
 </html>
+
