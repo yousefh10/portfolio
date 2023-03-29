@@ -410,7 +410,7 @@ input:required::placeholder, textarea:required::placeholder {
 }
 
 .main h1 {
-  font-size: 50px;
+  font-size: 55px;
   color: #fff;
   animation: mainTransition 2.3s ease;
 }
