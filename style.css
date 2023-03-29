@@ -246,52 +246,20 @@ section {
   margin: 0;
 }
 
-.about-main {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .about {
   color: #fff;
   height: 48vh;
   margin-left: 10%;
-  flex-basis: 44%;
+  margin-right: 40%;
 }
 
 .about-title {
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .about-p {
   line-height: 1.4;
   font-size: 22px;
-}
-
-.skills {
-  margin-left: 14%;
-  margin-top: 4%;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(3, minmax(100px, 100px));
-  grid-template-rows: repeat(2, auto);
-  flex-basis: 20%;
-  height: 220px;
-  grid-gap: 25px;
-}
-
-.skill-types {
-  align-items: center;
-  text-align: center;
-  color: #fff;
-}
-
-.skill-types h2 {
-  font-size: 20px;
-}
-
-.skill-logos {
-  width: 50px;
-  height: 50px;
 }
 
 .courses {
@@ -811,9 +779,10 @@ h1 {
   }
 
   .about {
-    height: 58vh;
+    height: 60vh;
     font-size: 14px;
-    margin-right: 13%;
+    margin-right: 10%;
+    margin-left: 5%;
     flex-basis: 100%;
   }
 
@@ -827,19 +796,6 @@ h1 {
 
   .courses h1 {
     font-size: 35px;
-  }
-
-  .skills {
-    grid-template-columns: repeat(3, minmax(70px, 70px));
-    grid-gap: 15px;
-    flex-basis: 100%;
-    justify-content: unset;
-    margin-left: 14%;
-    margin-top: 0 !important;
-  }
-  
-  .skill-types h2 {
-    font-size: 16px;
   }
 
   .project-types {
@@ -858,7 +814,7 @@ h1 {
   }
 
   .main {
-    margin-top: 75%;
+    margin-top: 65%;
     margin-left: 0%;
     height: 65vh;
   }
@@ -991,14 +947,6 @@ h1 {
   
   .about-p {
     font-size: 22px;
-  }
-  
-  .skills {
-    margin-left: 8%;
-    margin-top: 15%;
-    grid-template-columns: repeat(3, minmax(90px, 90px));
-    flex-basis: 20%;
-    grid-gap: 10px;
   }
 
   #projects h1 {
