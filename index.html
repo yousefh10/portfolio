@@ -15,7 +15,6 @@
                 <img class="logo-img" src="contents/images/logo.png" alt="Yousef">
             </a>
             <ul id="dropmenu">
-                <!-- <li><a href="#about">ABOUT</a></li> -->
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#courses">COURSES</a></li>
                 <li><a href="#contact">CONTACT</a></li>
@@ -41,7 +40,6 @@
                     <ion-icon name="logo-github"></ion-icon>
                 </a>
             </div>
-            <!-- <a href="#about" class="main-buttons">Know More</a> -->
             <div class="arrow-down">
                 <a class="jump" href="#projects"><ion-icon name="chevron-down"></ion-icon></a>
             </div>
@@ -49,8 +47,8 @@
     </section>
 
     <section id="projects">
-        <h1 class="fade-in-titles">PROJECTS</h1>
-        <div class="project-types reveal">
+        <h1>PROJECTS</h1>
+        <div class="project-types">
             <div class="types">
                 <img src="contents/images/hear-it-here.png">
                 <div class="overlay-effect">
@@ -105,7 +103,7 @@
 
     <section id="courses">
         <div class="courses">
-            <h1 class="fade-in-titles">COURSES</h1>
+            <h1>COURSES</h1>
             <br>
             <button class="accordion">First Year (2020-2021)<ion-icon class="down-icon" name="chevron-down-outline"></ion-icon></button>
             <div class="panel">
@@ -359,22 +357,13 @@
         </div>
     </dialog>
 
-    <script>
-        let nav = document.querySelector("nav");
-        window.onscroll = function () {
-            if (document.documentElement.scrollTop > 20) {
-                nav.classList.add("perm");
-            } else {
-                nav.classList.remove("perm");
-            }
-        }
-    </script>
-
+    <!-- icons  -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/2300f4b48a.js" crossorigin="anonymous"></script>
 
 
+    <!-- movie theatre modal -->
     <script>
         const modal = document.querySelector('.modal');
         const openModal = document.querySelector('.open-modal');
@@ -400,6 +389,7 @@
         }
     </script>
 
+    <!-- hear it here modal -->
      <script>
         const musicmodal = document.querySelector('.modal-music');
         const openMusicModal = document.querySelector('.open-modal-music');
@@ -435,6 +425,7 @@
         })
     </script>
 
+    <!-- dropmenu for smaller devices -->
     <script>
         var dropmenu = document.getElementById('dropmenu');
 
@@ -443,7 +434,7 @@
         }
 
         function closedropdown() {
-            dropmenu.style.right = "-200px";
+            dropmenu.style.right = "-230px";
         }
 
         var dropdownOptions = dropmenu.getElementsByTagName('li');
@@ -471,51 +462,13 @@
         }
     </script>
     
+    <!-- reset form when filled out -->
     <script>
         window.onbeforeunload = () => {
             for (const form of document.getElementsByTagName('form')) {
                 form.reset();
             }
         }
-    </script>
-    
-    <script>
-        window.addEventListener('scroll', reveal);
-
-        function reveal() {
-            var reveals = document.querySelectorAll('.reveal');
-
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var revealTop = reveals[i].getBoundingClientRect().top;
-                var revealPoint = 150;
-
-                if (revealTop < windowHeight - revealPoint) {
-                    reveals[i].classList.add('active');
-                }
-            }
-        }
-    </script>
-    
-    <script>
-        const options = {
-            rootMargin: '0px',
-            threshold: 0.5
-        };
-
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = 1;
-                }
-            });
-        }, options);
-
-        const h1Elements = document.querySelectorAll('h1');
-        h1Elements.forEach(h1 => {
-            observer.observe(h1);
-        });
-        observer.observe(h1);
     </script>
 
 </body>
