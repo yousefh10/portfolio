@@ -688,7 +688,7 @@ h1 {
     width: 230px;
     height: 100vh;
     padding-top: 200px;
-    z-index: 100;
+    z-index: 120;
     transition: right 0.5s;
     display: flex;
     flex-direction: column;
